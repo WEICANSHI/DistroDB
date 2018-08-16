@@ -11,7 +11,9 @@ in the network, withholding attack or deny of service. The system focus on the c
 * MySQL Database
 
 ### Consensus & Data Recovery:
-Apply practical Byzantine Fault Tolerance Algorithm(simple version and a little modification) to make consensus and Merkle tree structure to check if something wrong in the database and start quickly recovery
+Apply practical Byzantine Fault Tolerance Algorithm(simple version and a little modification) to make consensus and Merkle tree structure to check if something wrong in the database and start quickly recovery.
+In consensus process, the client sent command to a potential honest node, and this node send the command to others, in pre-prepare stage, nodes would confirm the command they receive and their database condition through Merkletree, if the hash of the root are same, we can make sure that the data base among each other are exactly the same. In prepare stage, nodes get enough confirmation and execute the command, send the hash root of the data base after execution done. Fianly in commit stage, if a node recieve enough confirmation, reply the execution result to the clent.
+![](./Documentation/Image/BFT.png)
 
 
 ### Structure:
