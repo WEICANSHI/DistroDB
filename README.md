@@ -6,8 +6,11 @@ in the network, withholding attack or deny of service. The system focus on the c
 
 ### Technology & Algorithm:
 * Hyperledger Composer https://hyperledger.github.io/composer/latest/introduction/introduction.html
+* osBrain https://osbrain.readthedocs.io/en/stable/
 * Practical Byzantine Fault Tolerance http://pmg.csail.mit.edu/papers/osdi99.pdf
 * Merkle tree https://en.wikipedia.org/wiki/Merkle_tree
+* Socket programming
+* MultiThreading
 * MySQL Database
 
 ### Consensus & Data Recovery:
