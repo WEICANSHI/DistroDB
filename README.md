@@ -21,7 +21,23 @@ In consensus process, the client sent command to a potential honest node, and th
 Node exsist as a manipulator, communicate with DBManager, Logger in software level. DBManager send and get interperated command from the Interperator, and use the command execute operation to the database, besides compute the Merkle tree for the database for quickly recovery and detecting disagreement. Logger is the 'Memory' for the node, record the stage, message sent by the peers, and notify the node to change stage or start requester to send message to the network. Requester and Receiver gets and receive message from the network
 ![](./Documentation/Image/NodeAgent.png)
 
-### Admin Structure:
+#### Admin Structure:
 Client commnicate with the API and manipulate the amin node to execute operation to the distribute database. Same, Requester and Reciever 
 get and receive message from the network
 ![](./Documentation/Image/AdminAgent.png)
+
+### Start Guid:
+Source code is in https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/distroDB
+To start a node, code in java with following code <br>
+Node node1 = new Node(1111); <br>
+node1.start(); <br>
+node1.ConnectDB("username", "password", "database name", "table name", "url to database"); <br>
+After start the node, then could start the admin <br>
+Admin admin = new Admin(); <br>
+admin.addNode("node1", "localhost", 1111); <br>
+where parameters are random identifier sign to the node, dns, port number<br>
+To Execute a command, run <br>
+admin.executeCommand(command); <br>
+A test write https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/Test
+Here is a parser for load a simple data(in data file) to the data base
+https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/DatabaseDemo
