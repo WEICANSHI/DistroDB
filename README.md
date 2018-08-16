@@ -38,6 +38,6 @@ admin.addNode("node1", "localhost", 1111); <br>
 where parameters are random identifier sign to the node, dns, port number<br>
 To Execute a command, run <br>
 admin.executeCommand(command); <br>
-A test write https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/Test
+A test wrote https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/Test <br>
 Here is a parser for load a simple data(in data file) to the data base
 https://github.com/WEICANSHI/SmartContract-DistroDB/tree/master/Source/DatabaseDemo
