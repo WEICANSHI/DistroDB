@@ -1,12 +1,10 @@
-## SmartContract-DistroDB
+## DistroDB
 
 ### Introduction:
 A design for distribution database quickly detect and recover the error. Among distribution database, consensus between database is important, sometimes even including the order of the transaction caused by the delay
 in the network, withholding attack or deny of service. The system focus on the consensus reaching and recovering the data.
 
 ### Technology & Algorithm:
-* Hyperledger Composer https://hyperledger.github.io/composer/latest/introduction/introduction.html
-* osBrain https://osbrain.readthedocs.io/en/stable/
 * Practical Byzantine Fault Tolerance http://pmg.csail.mit.edu/papers/osdi99.pdf
 * Merkle tree https://en.wikipedia.org/wiki/Merkle_tree
 * Socket programming
